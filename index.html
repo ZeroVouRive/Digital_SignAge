@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Signage Jadwal Kegiatan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" href="rsm-logo.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="rsm-logo.png" alt="Logo Instansi">
+      <div class="header-text">
+        <img src="rsm-text.png" alt="RSM Text">
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div id="date"></div>
+      <div id="current-time" class="time"></div>
+      <div class="weather" id="weather">
+        <i id="weather-icon" class="fas"></i>
+        <div id="weather-info">Cuaca: -</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Container Utama -->
+  <div class="container">
+    
+    <!-- Sidebar: Jadwal Hari Ini -->
+    <section class="sidebar">
+      <h3>Jadwal Hari Ini</h3>
+    </section>
+
+    <!-- Main: Jadwal yang Sedang Berlangsung -->
+    <section class="main">
+	  <div class="status" id="status">🔴 SEDANG BERLANGSUNG</div>
+	  <div class="title" id="title">Workshop Digitalisasi</div>
+	  <div class="info" id="time"></div>
+	  <div class="next" id="next"></div>
+	</section>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
